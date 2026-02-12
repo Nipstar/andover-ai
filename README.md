@@ -2,7 +2,7 @@
 
 Marketing website for **Andover AI Automation** — an AI automation agency based in Andover, Hampshire, UK, specialising in AI voice agents, chatbots, and workflow automation for local small businesses.
 
-**Live site:** [andoveraiautoamation.com](https://andoveraiautoamation.com)
+**Live site:** [aiautomationandover.co.uk](https://aiautomationandover.co.uk)
 
 ## Tech Stack
 
