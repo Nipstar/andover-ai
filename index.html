@@ -146,6 +146,22 @@
           "@type": "Answer",
           "text": "Yes! While we're proudly based in Andover, Hampshire, we work with businesses across the South of England and beyond. AI automation works anywhere — location is no barrier."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you visit Andover businesses in person?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — we are Andover-based and visit clients in person across town. From the town centre and Chantry Centre through Picket Twenty, Augusta Park, Walworth, East Anton, Charlton, and Knights Enham. Discovery workshops, integration kick-offs, post-launch reviews — whichever bit benefits from face-to-face, we do face-to-face."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you the only AI agency local to Andover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We are the only AI automation agency physically based in Andover. There are larger London and Manchester agencies who will sell into Andover remotely, but for in-person workshops and ongoing local support we are the only Andover AI agency in the SERP that can actually meet you in town. Tested by booking a meeting — most prospects do."
+        }
       }
     ]
   }
@@ -1501,6 +1517,59 @@
     }
     .footer__profiles a:hover { color: var(--accent-secondary); }
     .footer__profiles-divider { margin: 0 4px; opacity: 0.3; color: var(--text-muted); }
+
+    /* ── HYPER-LOCAL ANDOVER SECTION ───────────────────── */
+    .hyper-local {
+      padding: 96px 0;
+      background: var(--bg-primary);
+      position: relative;
+    }
+    .hl__head {
+      max-width: 820px;
+      margin: 0 auto 56px;
+      text-align: center;
+    }
+    .hl__label {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: var(--accent-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
+    }
+    .hl__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hl__card {
+      background: rgba(26, 31, 46, 0.6);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .hl__card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(59, 130, 246, 0.3);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+    }
+    .hl__card h3 {
+      font-size: 1.15rem;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .hl__card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .hl__grid { grid-template-columns: 1fr; }
+      .hyper-local { padding: 64px 0; }
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -2029,6 +2098,36 @@
       </div>
     </section>
 
+    <!-- ═══ HYPER-LOCAL ANDOVER (additive — does not touch ranking copy) ═══ -->
+    <section class="hyper-local" id="around-andover">
+      <div class="container">
+        <div class="hl__head reveal">
+          <span class="hl__label">Around Andover</span>
+          <h2>Andover's local AI agency — face-to-face wherever you are in town</h2>
+          <p class="section-subtitle">We are Andover's local AI agency. We meet clients in person from the town centre through Picket Twenty, Augusta Park, Walworth, Charlton, Knights Enham, East Anton, and the Anton Lakes side of town. The A303 connects us to Salisbury, Newbury, and Basingstoke in under 30 minutes when you'd rather we came to you.</p>
+        </div>
+        <div class="hl__grid">
+          <article class="hl__card reveal">
+            <h3>Andover town centre, High Street + Chantry Centre businesses</h3>
+            <p>Independent retailers, professional services on Bridge Street, hospitality around the Chantry Centre and George Yard, salons and clinics across the town. The AI voice agent handles the high-volume routine enquiries that drown a small team during peak hours.</p>
+          </article>
+          <article class="hl__card reveal">
+            <h3>Picket Twenty, Augusta Park + East Anton trades</h3>
+            <p>Electricians, plumbers, builders, and heating engineers working across the East Anton estates. The AI takes the 2am emergency call, qualifies the urgency, dispatches if needed, books the morning slot if not — and emails you the call summary before your team starts.</p>
+          </article>
+          <article class="hl__card reveal">
+            <h3>Walworth Industrial Estate + Andover's SME corridor</h3>
+            <p>Manufacturers, distributors, and B2B service businesses on Walworth and around the A303 corridor. Workflow automation for quote handling, supplier onboarding, invoice chase, and CRM hygiene — typical 10-20 hours/week saved within the first month.</p>
+          </article>
+          <article class="hl__card reveal">
+            <h3>Why face-to-face still matters</h3>
+            <p>We are an Andover-based AI agency. We meet clients in person across Andover whenever it helps — discovery workshops, integration kick-offs, post-launch reviews. We are the only AI agency in the local SERP that can actually pop round for a coffee. That difference shows up in how well the agents we build understand your business.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
     <!-- ═══ FAQ ═══ -->
     <section class="faq" id="faq">
       <div class="container">
@@ -2093,6 +2192,21 @@
               <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
             </button>
             <div class="faq__answer"><div class="faq__answer-inner">Yes! While we're proudly based in Andover, Hampshire, we work with businesses across the South of England and beyond. AI automation works anywhere — location is no barrier.</div></div>
+          </div>
+        
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              Do you visit Andover businesses in person?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><div class="faq__answer-inner">Yes — we are Andover-based and visit clients in person across town. From the town centre and Chantry Centre through Picket Twenty, Augusta Park, Walworth, East Anton, Charlton, and Knights Enham. Discovery workshops, integration kick-offs, post-launch reviews — whichever bit benefits from face-to-face, we do face-to-face.</div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              Are you the only AI agency local to Andover?
+              <svg class="faq__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq__answer"><div class="faq__answer-inner">We are the only AI automation agency physically based in Andover. There are larger London and Manchester agencies who will sell into Andover remotely, but for in-person workshops and ongoing local support we are the only Andover AI agency in the SERP that can actually meet you in town. Tested by booking a meeting — most prospects do.</div></div>
           </div>
         </div>
       </div>
