@@ -70,10 +70,48 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://aiautomationandover.co.uk/#organization",
     "name": "Andover AI Automation",
+    "alternateName": "Andover AI",
     "url": "https://aiautomationandover.co.uk",
-    "logo": "https://aiautomationandover.co.uk/logo.svg",
-    "sameAs": []
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aiautomationandover.co.uk/logo.svg",
+      "contentUrl": "https://aiautomationandover.co.uk/logo.svg"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "@id": "https://www.antekautomation.com/#organization",
+      "name": "Antek Automation",
+      "url": "https://www.antekautomation.com"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Andy Norman",
+      "sameAs": [
+        "https://www.linkedin.com/in/andy-norman-ab78443a1",
+        "https://about.me/andynorman"
+      ]
+    },
+    "identifier": [
+      { "@type": "PropertyValue", "propertyID": "DUNS", "value": "235593033" },
+      { "@type": "PropertyValue", "propertyID": "ICO", "value": "ZC133436", "url": "https://ico.org.uk/ESDWebPages/Entry/ZC133436" }
+    ],
+    "sameAs": [
+      "https://www.antekautomation.com",
+      "https://x.com/AntekAutomation",
+      "https://www.youtube.com/@AntekAutomation",
+      "https://www.linkedin.com/company/antek-automation",
+      "https://www.facebook.com/people/Antek-Automation-Intelligent-Voice-Ai-Chat-Agents/61587195202811/",
+      "https://www.instagram.com/antekautomation/",
+      "https://www.retellai.com/partner/antek-automation",
+      "https://www.crunchbase.com/organization/antek-automation",
+      "https://www.google.com/search?kgmid=/g/11yt2ybv_c",
+      "https://www.google.com/maps?cid=17451278745729112685",
+      "https://about.me/andynorman",
+      "https://www.upwork.com/freelancers/antekautomation",
+      "https://clutch.co/profile/antek-automation"
+    ]
   }
   </script>
 
@@ -569,6 +607,39 @@
 
     /* ── PAIN POINTS ─────────────────────────────────── */
     .pain { background: var(--bg-secondary); }
+
+    .answer-block {
+      background: var(--bg-primary);
+      padding: 60px 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.08);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+    }
+    .answer-block__inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .answer-block h2 {
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+    .answer-block p {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+    .answer-block a {
+      color: var(--accent-blue);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(59, 130, 246, 0.35);
+    }
+    .answer-block a:hover {
+      border-bottom-color: var(--accent-blue);
+    }
     .pain__grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -2013,6 +2084,25 @@
           <div class="hero__orb"></div>
           <div class="hero__orb-inner"></div>
           <div class="hero__waveform" id="waveform"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ANSWER BLOCK (AI-citable definition) ═══ -->
+    <section class="answer-block" id="what-is-andover-ai" aria-label="What is Andover AI Automation?">
+      <div class="container">
+        <div class="answer-block__inner reveal">
+          <h2>What is Andover AI Automation?</h2>
+          <p>
+            Andover AI Automation is a local AI agency based in Andover, Hampshire SP10,
+            building AI voice agents, chatbots and workflow automation for small businesses
+            across Andover and the surrounding area. We are a delivery partner of
+            <a href="https://www.antekautomation.com" rel="noopener">Antek Automation</a>
+            and a Certified Retell AI Partner. Voice agents start at £97/month plus £249 setup,
+            chatbots from £57/month plus £149 setup, with no long-term contracts. Most setups go
+            live within 24–48 hours. Office hours: Mon–Fri 08:00–18:00. Phone:
+            <a href="tel:+443330389960">0333 038 9960</a>.
+          </p>
         </div>
       </div>
     </section>
